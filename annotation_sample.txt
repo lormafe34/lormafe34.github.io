@@ -1,0 +1,15 @@
+=== AI DATA ANNOTATION & QUALITY CONTROL SAMPLE ===
+Task: Text Classification and Prompt Response Evaluation
+Author: Lormafe
+
+[Record #001]
+- Prompt: "Explain the benefits of remote work for data specialists."
+- Model Response: Remote work allows flexible scheduling, reduces commuting stress, and provides a focused environment for deep work like data annotation.
+- Evaluation / Quality Check: Accurate, clear, and directly answers the prompt. No factual errors detected.
+- Label Category: Productivity / Remote Workplace
+
+[Record #002]
+- Prompt: "Classify the following text sentiment: 'The software update was seamless and fast.'"
+- Expected Classification: Positive Sentiment
+- Confidence Score: High (5/5)
+- Notes: Tone is appreciative; syntax is clean.
