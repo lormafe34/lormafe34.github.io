@@ -3,72 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lormafe - IT & Web Developer Portfolio</title>
+    <title>Lormafe - Remote IT Professional & Web Developer</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f9; color: #333; }
-        header { background: #2c3e50; color: #fff; padding: 30px; text-align: center; border-radius: 8px; }
-        section { background: #fff; margin: 20px auto; padding: 25px; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1, h2 { color: #2c3e50; }
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --bg: #f8fafc;
+            --text: #1e293b;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; padding: 50px 20px; text-align: center; }
+        header h1 { margin: 0 0 10px 0; font-size: 2.5em; }
+        header p { margin: 0; font-size: 1.2em; opacity: 0.9; }
+        .container { max-width: 900px; margin: -30px auto 40px auto; padding: 0 20px; }
+        section { background: #fff; margin-bottom: 25px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        h2 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 0; }
         ul { padding-left: 20px; }
-        .project-card { background: #f9f9fb; border-left: 4px solid #3498db; padding: 15px; margin-bottom: 15px; border-radius: 4px; }
-        .project-card h3 { margin-top: 0; color: #2980b9; }
-        .btn { display: inline-block; background: #3498db; color: #fff; padding: 8px 15px; margin-top: 10px; text-decoration: none; border-radius: 4px; font-size: 0.9em; transition: background 0.3s; }
-        .btn:hover { background: #2980b9; }
-        .footer { text-align: center; font-size: 0.9em; color: #777; margin-top: 30px; }
+        li { margin-bottom: 8px; }
+        .project-card, .exp-card { background: #f1f5f9; border-left: 4px solid var(--secondary); padding: 20px; margin-bottom: 20px; border-radius: 6px; }
+        .project-card h3, .exp-card h3 { margin-top: 0; color: var(--primary); }
+        .btn { display: inline-block; background: var(--secondary); color: #fff; padding: 10px 20px; margin-top: 15px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.3s; }
+        .btn:hover { background: #1d4ed8; }
+        .btn-success { background: #10b981; }
+        .btn-success:hover { background: #059669; }
+        .footer { text-align: center; font-size: 0.9em; color: #64748b; margin-top: 40px; padding: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Hello, I'm Lormafe</h1>
-        <p>Aspiring IT Professional & Web Developer | Data Annotator & Tech Enthusiast</p>
+        <h1>Lormafe</h1>
+        <p>Remote IT Professional | Web Developer & Data Annotation Specialist</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Welcome to my personal portfolio! I am expanding my career into technology, focusing on programming, problem-solving, structured data workflows, and modern web development.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Dedicated and detail-oriented remote professional specializing in web development, Python automation, and high-accuracy data annotation/evaluation. Proven ability to deliver structured, high-quality results independently with strong problem-solving skills.</p>
+        </section>
 
-    <section>
-        <h2>Skills & Tools</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python, HTML, CSS</li>
-            <li><strong>Tools & Platforms:</strong> GitHub, VS Code, Git, AI Prompting & Evaluation</li>
-            <li><strong>Core Competencies:</strong> Data Annotation, Web Design, Logical Problem Solving</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Skills & Expertise</h2>
+            <ul>
+                <li><strong>Web Development:</strong> HTML5, CSS3, Responsive Design, GitHub Pages</li>
+                <li><strong>Programming & Automation:</strong> Python Scripting, Data Parsing, Git/GitHub</li>
+                <li><strong>Data Operations:</strong> Data Annotation, Image/Text Labeling, LLM & AI Response Evaluation</li>
+                <li><strong>Remote Work Stack:</strong> Strong communication, time management, and autonomous execution</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3>1. Personal Portfolio Website</h3>
-            <p>Designed and deployed a responsive personal website from scratch using HTML and CSS, hosted live via GitHub Pages.</p>
-            <a href="https://github.com/lormafe34/lormafe34.github.io" target="_blank" class="btn">View Repository</a>
-        </div>
+        <section>
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>1. Personal Portfolio Website</h3>
+                <p>Designed, coded, and deployed a fully responsive portfolio website using modern HTML/CSS, hosted live via GitHub Pages.</p>
+                <a href="https://github.com/lormafe34/lormafe34.github.io" target="_blank" class="btn">View Live / Repo</a>
+            </div>
 
-        <div class="project-card">
-            <h3>2. Python Automation & Data Parsing Script</h3>
-            <p>Developed Python scripts focused on data structuring, text processing, and automated file organization to streamline workflows.</p>
-            <a href="https://github.com/lormafe34" target="_blank" class="btn">View on GitHub</a>
-        </div>
+            <div class="project-card">
+                <h3>2. Python Automation & Data Processing</h3>
+                <p>Built automation scripts to streamline file organization, parse unstructured text data, and optimize digital workflows.</p>
+                <a href="https://github.com/lormafe34" target="_blank" class="btn">View on GitHub</a>
+            </div>
 
-        <div class="project-card">
-            <h3>3. Data Annotation & Quality Evaluation</h3>
-            <p>Performed structured data categorization, image/text labeling, and AI response evaluation to ensure high-accuracy datasets.</p>
-            <a href="https://github.com/lormafe34" target="_blank" class="btn">Learn More</a>
-        </div>
-    </section>
+            <div class="project-card">
+                <h3>3. AI Data Annotation & Quality Control</h3>
+                <p>Executed precise text classification, prompt evaluation, and dataset structuring to ensure rigorous AI model performance.</p>
+                <a href="https://github.com/lormafe34" target="_blank" class="btn">Learn More</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Interested in working together or want to connect? Reach out to me directly through my platforms below:</p>
-        <a href="https://github.com/lormafe34" target="_blank" class="btn">GitHub Profile</a>
-        <a href="mailto:your-email@example.com" class="btn" style="background: #27ae60;">Send Email</a>
-    </section>
+        <section>
+            <h2>Experience & Background</h2>
+            
+            <div class="exp-card">
+                <h3>Freelance Tech & Data Annotator</h3>
+                <p><em>Independent Contributor | Remote</em></p>
+                <p>Provided independent contract services focused on digital data structuring, quality assurance, and technical assistance for remote tasks.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Let's Work Together</h2>
+            <p>I am actively looking for remote opportunities where I can contribute my technical skills, attention to detail, and dedication. Reach out to me via my professional profiles:</p>
+            <a href="https://github.com/lormafe34" target="_blank" class="btn">GitHub Profile</a>
+            <a href="mailto:your-email@example.com" class="btn btn-success">Send Email</a>
+        </section>
+    </div>
 
     <div class="footer">
-        <p>&copy; 2026 Lormafe. Built with GitHub Pages.</p>
+        <p>&copy; 2026 Lormafe. Built for Remote Opportunities.</p>
     </div>
 
 </body>
